@@ -1,19 +1,23 @@
-import React from 'react'
-import './Cart.css'
+import React  from "react";
+
+import "./Cart.css";
 
 const cart = (props) => {
-    const { image, name, price } = props;
+  
+  const { image, name, price } = props;
+ 
   return (
     <div className="main">
       <div>
         <h1>{name}</h1>
-        <img src={image} />
+        <img src={image} alt="pic" />
         <p> ₹ {price}</p>
+       
       </div>
 
       <button>Buy Now</button>
     </div>
   );
-}
+};
 
-export default cart
+export default cart;
