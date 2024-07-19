@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Form from './components/Form';
 import Fetch from './components/Fetch';
 import A from './components/A'
+import RouterEg from './components/RouterEg'
 
 
 
@@ -14,7 +15,7 @@ import UseReducerEx from './components/UseReducerEx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
- <UseReducerEx/>
+ <RouterEg/>
   </React.StrictMode>
 );
 
