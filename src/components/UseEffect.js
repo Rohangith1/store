@@ -1,19 +1,16 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from "react";
 
 const UseEffect = () => {
+  const [clicked, setClicked] = useState();
+  const [count, setCount] = useState(0);
 
-    const [clicked, setClicked] = useState();
-    const [count,setCount]=useState(0)
-
-    useEffect(() => {
-        //code to run after render or update
-        console.log("we r in  use state");
-        return (
-            () => {
-                console.log("return of use state")
-            }
-        )
-    },[clicked,count])
+  useEffect(() => {
+    //code to run after render or update
+    console.log("we r in  use state");
+    return () => {
+      console.log("return of use state");
+    };
+  }, [clicked, count]);
   return (
     <div>
       <button onClick={() => setClicked("This")}>This</button>
@@ -34,9 +31,16 @@ const UseEffect = () => {
       >
         Increment
       </button>
+      <button
+        onClick={() => {
+          setCount(count - 1);
+        }}
+      >
+        Decrement
+      </button>
       <h2>{count}</h2>
     </div>
   );
-}
+};
 
-export default UseEffect
+export default UseEffect;

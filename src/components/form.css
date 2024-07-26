@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.container div{
+   
+    margin: 30px;
+    padding: 10px;
+  
+    
+}
